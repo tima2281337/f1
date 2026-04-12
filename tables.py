@@ -12,7 +12,7 @@ cursor.execute('''
         driver_id INTEGER PRIMARY KEY AUTOINCREMENT,
         name varchar(255) not null unique,
         team varchar(255) not null,
-        age integer not null   
+        date_of_birth integer not null   
     )
 ''')
 #таблица гонок
