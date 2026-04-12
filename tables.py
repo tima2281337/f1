@@ -11,8 +11,9 @@ cursor.execute('''
     create table if not exists drivers(
         driver_id INTEGER PRIMARY KEY AUTOINCREMENT,
         name varchar(255) not null unique,
+        abb varchar(3) not null unique,
         team varchar(255) not null,
-        date_of_birth integer not null   
+        date_of_birth integer   
     )
 ''')
 #таблица гонок
